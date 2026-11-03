@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "10.0.7"
     },
-    "CreationDate": "2026-11-02T02:38:20-08:00"
+    "CreationDate": "2026-11-02T20:39:13-08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -17,8 +17,8 @@
       "X": 45.8,
       "Y": 40.55
     },
-    "LayerNumber": 4,
-    "BoardThickness": 1.5846,
+    "LayerNumber": 2,
+    "BoardThickness": 0.5991,
     "Finish": "None"
   },
   "DesignRules": [
@@ -30,14 +30,6 @@
       "MinLineWidth": 0.127,
       "TrackToRegion": 0.2032,
       "RegionToRegion": 0.2032
-    },
-    {
-      "Layers": "Inner",
-      "PadToPad": 0.15,
-      "PadToTrack": 0.15,
-      "TrackToTrack": 0.15,
-      "TrackToRegion": 0.2032,
-      "RegionToRegion": 0.2032
     }
   ],
   "FilesAttributes": [
@@ -47,18 +39,8 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "pigeonvision_pa-Metal 2.g1",
-      "FileFunction": "Copper,L2,Inr",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "pigeonvision_pa-Metal 3.g2",
-      "FileFunction": "Copper,L3,Inr",
-      "FilePolarity": "Positive"
-    },
-    {
       "Path": "pigeonvision_pa-Bottom Layer.gbl",
-      "FileFunction": "Copper,L4,Bot",
+      "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
@@ -113,34 +95,11 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.4064,
+      "Color": "R109G116B75",
+      "Thickness": 0.508,
       "Material": "RO4003C",
-      "Name": "Top Layer/Metal 2",
-      "Notes": "Type: dielectric layer 1 (from Top Layer to Metal 2)"
-    },
-    {
-      "Type": "Copper",
-      "Thickness": 0.0356,
-      "Name": "Metal 2"
-    },
-    {
-      "Type": "Dielectric",
-      "Thickness": 0.6096,
-      "Material": "FR-4",
-      "Name": "Metal 2/Metal 3",
-      "Notes": "Type: dielectric layer 2 (from Metal 2 to Metal 3)"
-    },
-    {
-      "Type": "Copper",
-      "Thickness": 0.0356,
-      "Name": "Metal 3"
-    },
-    {
-      "Type": "Dielectric",
-      "Thickness": 0.4064,
-      "Material": "RO4003C",
-      "Name": "Metal 3/Bottom Layer",
-      "Notes": "Type: dielectric layer 3 (from Metal 3 to Bottom Layer)"
+      "Name": "Top Layer/Bottom Layer",
+      "Notes": "Type: dielectric layer 1 (from Top Layer to Bottom Layer)"
     },
     {
       "Type": "Copper",

@@ -3,14 +3,12 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(general
-		(thickness 1.58464)
+		(thickness 0.59912)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal "Top Layer")
-		(4 "In1.Cu" signal "Metal 2")
-		(6 "In2.Cu" signal "Metal 3")
 		(2 "B.Cu" signal "Bottom Layer")
 		(9 "F.Adhes" user "F.Adhesive")
 		(11 "B.Adhes" user "B.Adhesive")
@@ -58,32 +56,11 @@
 			)
 			(layer "dielectric 1"
 				(type "core")
-				(thickness 0.4064)
+				(color "FR4 natural")
+				(thickness 0.508)
 				(material "RO4003C")
 				(epsilon_r 3.38)
-				(loss_tangent 0.02)
-			)
-			(layer "In1.Cu"
-				(type "copper")
-				(thickness 0.03556)
-			)
-			(layer "dielectric 2"
-				(type "prepreg")
-				(thickness 0.6096)
-				(material "FR-4")
-				(epsilon_r 4.8)
-				(loss_tangent 0.02)
-			)
-			(layer "In2.Cu"
-				(type "copper")
-				(thickness 0.03556)
-			)
-			(layer "dielectric 3"
-				(type "core")
-				(thickness 0.4064)
-				(material "RO4003C")
-				(epsilon_r 3.38)
-				(loss_tangent 0.02)
+				(loss_tangent 0.0027)
 			)
 			(layer "B.Cu"
 				(type "copper")
@@ -118,6 +95,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(aux_axis_origin 132.6261 136.7536)
 		(grid_origin 132.6261 136.7536)
 		(pcbplotparams
@@ -219,9 +197,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9eba96e8-0f13-41d3-9865-efe8db9f7811")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0724RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "822411d9-3912-457e-b7c4-8b04580fe278")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b028f9b-6c93-4b1b-ae12-f23470c9a88e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "pi pad series (E24)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b98e95bb-ddd9-466b-8dc9-54a6f12a7f7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/0eddd0aa-b43b-4729-a352-1936a2b2c66e")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -283,6 +320,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RF Chain/RF_IN_SMA")
+			(pintype "passive")
 			(uuid "9b20d9ae-dd7f-48e8-8cf9-2c8e81316855")
 		)
 		(pad "2" smd roundrect
@@ -291,6 +329,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RF Chain/RF_PA_IN")
+			(pintype "passive")
 			(uuid "b1c39d39-a2e5-46a1-976e-9f4891645559")
 		)
 		(embedded_fonts no)
@@ -402,9 +441,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b453a4c9-bea9-42a8-add3-7da72c831ac9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86c13488-3d8a-4ab2-a732-18f5e5219425")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "fitted (not on EVB184): filters 5V_RF buck ripple on bias line"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64cc884d-21a5-461c-bd49-87084702ef28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/6e46b000-5e8c-4870-80ea-515e1e4fefc5")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -563,9 +641,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1e40a62-b8ab-4c40-b9cc-d780b579a16f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79e9a97c-92e2-494e-bdeb-e0547c60aee2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "0 ohm jumper"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6e03783-e80b-4f57-b8b3-f5da17b98fe0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_26x26x20*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/ed77b060-63de-478c-a875-6806fa44abe0")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -724,9 +841,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06b68e56-2de6-4c42-9bfc-9f1aaaed9476")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a690f5f6-66ae-45ea-b910-d5626785d7f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "fitted (not on EVB184): filters 5V_RF buck ripple on bias line"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cd5f12c-7669-4f03-b371-b78d8197987b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/f7ce78d5-7956-477c-b006-1aa5bcec2051")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -912,7 +1068,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/846cf5a9-4634-44f6-9b30-1274918fa91e")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -1110,7 +1266,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x22*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/c4bd5b85-062e-4fa4-af3d-9d285157f259")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -1296,7 +1452,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/0c463053-5c1d-4e72-ad72-3e8d79fe8156")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -1474,9 +1630,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac90d138-195e-4871-9056-a01f30a33af7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GJM1555C1H3R6BB01D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b86bc985-b689-4a28-9627-e648d9718575")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "output match; tolerance TBC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a26df370-ba20-45a2-99a4-a1c61e415f8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x22*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/6e31c801-5065-484f-a839-75b66aa781a9")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -1643,9 +1838,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TBD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c5b9e71-d62c-45aa-934e-d45634a02473")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TBD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2f7e2a8-f608-4da4-8bd6-5f83e0cd6740")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "10 uF 0402 X5R/X7R rated >=10 V (SSI derating <=60%: 5 V/0.6 = 8.3 V). Guerrilla used GRM155C80J106ME11D (6.3 V, 79%) - check DC-bias curve"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "462178bb-8e54-4d30-883b-e44811cba9ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/8c77aebe-721f-4cc6-927d-c3e256f0acd1")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -1824,7 +2058,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/9bc74fd8-1edc-4f72-a50b-7757a14cb9c6")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -2014,9 +2248,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90868b2e-1641-48bb-9eff-d6b198b8a918")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GJM1555C1H4R3BB01D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47d41785-8564-4ac3-9f83-0e03ad2a176b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "output match; tolerance TBC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb4649a6-a739-4ad8-980c-70325c5dc72d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x22*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/f2300e8c-bcb2-4636-ae48-276d38d9d968")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -2205,7 +2478,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x22*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/823be5ef-b695-407d-add8-c454dc2d55a7")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -2352,9 +2625,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11ba7288-1148-476d-adf3-249a8ba2897f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0710KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e656cdc6-7200-4f09-afa2-20b75887cd8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d68db40-1f60-45bf-a906-cc8f8a7fd8a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "PA_EN pull-down (River spec): PA off if cable/carrier unpowered"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72dfc764-4b0b-48b2-84d3-7e4a2385a4ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/9fc1a283-1d36-4d24-96df-bfa313cf14fd/c78e5255-948d-4a0b-a9c1-abd222515dd1")
-		(sheetname "PA Enable")
+		(sheetname "/PA Enable/")
 		(sheetfile "pa_enable.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2416,6 +2748,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/PA Enable/PA_EN")
+			(pintype "passive")
 			(uuid "a745a185-ddb9-46ed-95dd-3bd3e9b55c6e")
 		)
 		(pad "2" smd roundrect
@@ -2424,6 +2757,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "dae43a00-a5a7-4e96-b0f8-359e8d303bf0")
 		)
 		(embedded_fonts no)
@@ -2531,7 +2865,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/239e3ca0-1458-455b-bfdb-4491fe3b12e3")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -2668,10 +3002,28 @@
 				)
 			)
 		)
+		(property "Status" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7148fd93-216d-495d-a93a-8d5542613c37")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/9fc1a283-1d36-4d24-96df-bfa313cf14fd/27b960f6-f5f7-4470-8e99-7d0f9696a962")
-		(sheetname "PA Enable")
+		(sheetname "/PA Enable/")
 		(sheetfile "pa_enable.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -2711,6 +3063,8 @@
 			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net "/PA Enable/PA_SHDN")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "1be11940-a5bb-4321-b299-ff0143469233")
 		)
 		(embedded_fonts no)
@@ -2829,9 +3183,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6a9200b-76a9-4e47-a4b2-5edad8da269f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GJM1555C1H220GB01D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f896aaf-431e-4349-87f1-869e7595e257")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "output DC block; tolerance TBC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e46dd4be-df20-4d43-a025-5446ae65f2b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x30x18*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/44644b6d-9b1e-4937-b723-19e1928f73b7")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -2944,7 +3337,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.molex.com/pdm_docs/sd/430450218_sd.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2978,9 +3371,67 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22b2b9d0-8577-4d9f-af81-ea53b124f49f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0430450418"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd28021c-227d-4a6a-b4ae-ec9ed203ebcf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "863b6d89-9f35-4735-bf31-82d4f3eb909f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "KiCad std footprint for 0430450418 (SMT vertical, pads 1-2 one row, 3-4 other); confirm harness pin 1 orientation with River"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e428e24-fa13-4b00-a035-1611d8b2ef49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/2d304227-737c-44fb-9e93-9c3ed74c7ff0")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3499,6 +3950,8 @@
 			(size 1.27 2.54)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Power Entry/5V_RF")
+			(pinfunction "5V_RF_1")
+			(pintype "passive")
 			(uuid "ff74ae37-07e9-4ec8-a87f-a1c842bdec18")
 		)
 		(pad "2" smd rect
@@ -3506,6 +3959,8 @@
 			(size 1.27 2.54)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "0f75ad1b-90b7-4449-a21a-031309cae233")
 		)
 		(pad "3" smd rect
@@ -3513,6 +3968,8 @@
 			(size 1.27 2.54)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/PA Enable/PA_EN")
+			(pinfunction "PA_EN_3")
+			(pintype "passive")
 			(uuid "76e99be2-7638-4923-85a8-17c29fcfb5e0")
 		)
 		(pad "4" smd rect
@@ -3520,6 +3977,8 @@
 			(size 1.27 2.54)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_4")
+			(pintype "passive")
 			(uuid "ad55447a-4280-41dc-8d3e-cbf498158382")
 		)
 		(pad "MP" smd rect
@@ -3609,9 +4068,67 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Littelfuse"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89c21002-2cae-4f9d-b2ce-6a361f9d5f5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0466002.NR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45fbca86-1eb9-4870-9b66-eae1bb07176f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cf78fd6-6879-45b2-9c7d-11d0ee51106b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "2 A fast-acting 1206; verify derating at 50 C"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc4ed312-487d-4af9-be67-7effdb8659f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/e74deac4-1058-4cd1-ab1e-39136f9d3074")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3673,6 +4190,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
 			(net "/Power Entry/5V_RF")
+			(pinfunction "~_1")
+			(pintype "passive")
 			(uuid "ca312a0e-8826-416a-86f5-e2b7dff94764")
 		)
 		(pad "2" smd roundrect
@@ -3681,6 +4200,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
 			(net "Net-(D1-K)")
+			(pinfunction "~_2")
+			(pintype "passive")
 			(uuid "1928c91b-c915-49a0-8847-0d6a2e0676ff")
 		)
 		(embedded_fonts no)
@@ -3695,6 +4216,127 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(layer "F.Cu")
+		(uuid "5b974945-482f-4069-8af2-8f69841b3199")
+		(at 167.878303 117.495981)
+		(descr "Mounting Hole 3.2mm, M3, generated by kicad-footprint-generator mountinghole.py")
+		(tags "mountinghole M3")
+		(property "Reference" "H2"
+			(at 0 -4.15 0)
+			(layer "F.SilkS")
+			(uuid "1f83d285-c2cb-4adf-811a-ba810bebcb37")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 4.15 0)
+			(layer "F.Fab")
+			(uuid "da4a5fa5-9e8c-4557-85cd-ac76e78177e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a609a179-3fc1-4854-97e3-30b36179f419")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bfe792b-0db1-43ce-96a3-50395a25c6b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "mounting_hardware/mounting_hole"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "aa7417d9-5e75-4086-bd88-eb6e398b7f03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/bccf8165-ff68-4f92-b750-e56a1dbdfd7e")
+		(sheetname "/RF Chain/")
+		(sheetfile "rf_chain.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "a4bbf0d4-32e5-481f-a373-198496a99c94")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "fc1af5b4-bcd9-4276-8947-b3459db5c933")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5f8a9f20-545e-4720-989e-216755e21bf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 6.4 6.4)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "1_1")
+			(pintype "input")
+			(zone_connect 2)
+			(uuid "01d07c38-c40a-4416-8518-7877bf24d352")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Inductor_SMD:L_1206_3216Metric"
 		(layer "F.Cu")
@@ -3758,9 +4400,67 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b1bd0e3-fcd8-4fa3-b413-de29b55c6fa8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44ef3242-77fe-489f-8ad6-55dde09653ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4850dba6-aea9-46a5-980d-2cf937bb9b1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "pick: >=2 A rated, <=50 mOhm DCR, high Z 10-500 MHz"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03d234ec-1d54-46db-987c-dc364b66b608")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/892fdb87-ebf1-4d2a-82c0-051de58fde08")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3822,6 +4522,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.238095)
 			(net "Net-(D1-K)")
+			(pinfunction "~_1")
+			(pintype "passive")
 			(uuid "8bb22b3f-3d79-4347-8cb8-241ebf9a89ef")
 		)
 		(pad "2" smd roundrect
@@ -3830,6 +4532,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.238095)
 			(net "5V_PA")
+			(pinfunction "~_2")
+			(pintype "passive")
 			(uuid "56071d38-241b-41da-8af1-7425b35c229d")
 		)
 		(embedded_fonts no)
@@ -3907,9 +4611,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5791771-7eda-4b4e-9f5b-d127f71eacaf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-071K5L"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0670739-9d06-4add-904e-dc902581ddbe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0b9037d-f094-438d-84f6-34d411965bd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "LED current (5 V - 2.0 V)/1.5k = 2 mA; DNP for FLIGHT variant"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71546875-52d3-4204-b708-db028f396f33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/cef90900-8cd3-4f99-a7b5-c962ec159560")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3971,6 +4734,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "5V_PA")
+			(pintype "passive")
 			(uuid "86adaba0-e498-4a96-ad56-aaeda98ff0aa")
 		)
 		(pad "2" smd roundrect
@@ -3979,6 +4743,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-Pad2)")
+			(pintype "passive")
 			(uuid "b728b585-88e6-4c68-9976-01a1670aa108")
 		)
 		(embedded_fonts no)
@@ -4088,9 +4853,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1a8b867-a89f-424f-b889-4a9c361b5f34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd4a12df-5313-41cd-b3e2-e779440a67bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "interstage termination"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "434b8c08-68eb-450e-906e-8c2b07c6215c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/083f0113-3d56-463c-935f-467615f0449d")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -4237,9 +5041,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cee5aaa7-a172-414d-9edc-33d7808a7082")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0718KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d4a2513-d56f-4ef1-a442-27b95a462069")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fcbb65a-0967-4de1-9e2b-b490caaba992")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "VSHDN pull-up (E24): ~2.38 V at pin = OFF (>1.8 V V_IH)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86b9bec1-f109-4032-a792-eaeea3bb3704")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/9fc1a283-1d36-4d24-96df-bfa313cf14fd/833b446f-0084-4f84-b7ca-65eb84f0d783")
-		(sheetname "PA Enable")
+		(sheetname "/PA Enable/")
 		(sheetfile "pa_enable.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4301,6 +5164,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "5V_PA")
+			(pintype "passive")
 			(uuid "11ced27f-199a-4522-a520-f0ca9abe1d42")
 		)
 		(pad "2" smd roundrect
@@ -4309,6 +5173,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/PA Enable/PA_SHDN")
+			(pintype "passive")
 			(uuid "2bcc54c7-49a7-4106-8133-81eb593fa02b")
 		)
 		(embedded_fonts no)
@@ -4408,7 +5273,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/11468c8a-bb76-4954-8f1b-c01a1fdb6268")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -4593,9 +5458,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb6de151-29b2-461c-99ba-da976274f653")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a1c8b48-56be-4799-ac55-f3c7e00f0d25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "0 ohm jumper"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04f494bf-4361-4cf9-ae51-19ebb0743138")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_26x26x20*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/30d060ba-38d9-400a-abcc-8b0e296935c0")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -4742,9 +5646,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc16db47-f35d-4668-90d4-79bc14d381cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-07220RL"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46bdd058-80a2-464a-b78f-89cc1d0e4591")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5213b254-8b6a-41c5-ac53-52c6dd8f02ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "pi pad shunt (E24): 220/24/220 = 4.02 dB, Zin 50.0 ohm"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7927aa22-9dcc-4540-b105-9e96cc4f3f6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/2de60e21-e911-4863-b550-e0ed8f9d1c41")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4806,6 +5769,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RF Chain/RF_IN_SMA")
+			(pintype "passive")
 			(uuid "bb7100f0-8918-4e39-891f-7c47cbaeaa1e")
 		)
 		(pad "2" smd roundrect
@@ -4814,6 +5778,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "c9e4f637-f1e3-492a-9f98-c67f3b8899d3")
 		)
 		(embedded_fonts no)
@@ -4884,7 +5849,7 @@
 		)
 		(property ki_fp_filters "*Heatsink_wFid*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/cf62b0fc-3512-4696-8fa7-45b1df2e6a3d")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -5156,9 +6121,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28e861a4-1fe3-42bc-b51b-c9102abeeba7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRM155R71C104KA88D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c86834d-0fe9-4380-a851-4a1ad4547a33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4f974c6-5d8d-43cb-abf7-0bae0f923e74")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "HF decoupling at input"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68bb1067-4dff-40f1-8f36-0891b498bf87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*0402_20x30x18*")
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/8bbd762c-5ed0-4cbc-a021-92cdab3a255f")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5220,6 +6244,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "e35fb248-82e9-4d42-be4f-67f16dff21fe")
 		)
 		(pad "2" smd roundrect
@@ -5228,6 +6254,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "5V_PA")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "054ecaaf-e578-4612-b4d7-94cea66aaf03")
 		)
 		(embedded_fonts no)
@@ -5271,7 +6299,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/2n7002k-d.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5305,9 +6333,67 @@
 				)
 			)
 		)
+		(property "Manufacturer" "onsemi"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b5acb98-f440-4d5c-81cc-e7196c36b0ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "2N7002KT1G"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "525f4a5f-b0cc-406e-b0fc-f6d50a78ca3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80dca7dc-e3a5-42c4-9ff9-71d46fcffc6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "same part as River carrier library (ESD-protected gate); pulls VSHDN low when PA_EN high"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f9fc230-8334-4490-95cf-acbeaf80d312")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/9fc1a283-1d36-4d24-96df-bfa313cf14fd/efeb718a-d6db-458b-9d6e-5ec4a0404628")
-		(sheetname "PA Enable")
+		(sheetname "/PA Enable/")
 		(sheetfile "pa_enable.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5581,6 +6667,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(Q1-G)")
+			(pinfunction "G_1")
+			(pintype "input")
 			(uuid "14547486-c29e-47bc-a616-b906a9de79d8")
 		)
 		(pad "2" smd roundrect
@@ -5589,6 +6677,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "S_2")
+			(pintype "passive")
 			(uuid "506c8508-9f9f-47f9-a3aa-dbc3a3c681de")
 		)
 		(pad "3" smd roundrect
@@ -5597,6 +6687,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/PA Enable/PA_SHDN")
+			(pinfunction "D_3")
+			(pintype "passive")
 			(uuid "541aa648-f9d4-420a-926d-e04ca1a4ee6c")
 		)
 		(embedded_fonts no)
@@ -5713,9 +6805,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Coilcraft"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2785552-8e69-4e90-a2c4-473891b71e1c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0908SQ-23NGLC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35488d25-2e1b-485c-8050-c446a1958599")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "RF choke; tolerance TBC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00040f17-a702-4fa0-9e21-ced3d621f8ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0603_26x40x30*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/34754bfb-17cb-4a9d-a848-b139db25f013")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -5894,9 +7025,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TBD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f3d1a7a-5952-482b-9788-86e6cfcc5731")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TBD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "076f52d1-5175-48b3-80fa-631ed4d1cec0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "edge-launch SMA; choose for final board thickness"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8db008e7-391f-46df-8472-13d45cc9fc26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*SMA Round_Pin_RevC*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/30179392-6941-474f-8f2b-d73f7b607725")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -6497,7 +7667,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6520,9 +7690,55 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47aaec00-d3bc-4787-8c42-49a05c36f42a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-072RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "734412a6-4a04-4760-a049-5cfdbeb264c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "EVB184 2 ohm series (stability); real footprint, trace gap in layout"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55db88d1-845f-409f-a4a8-696debee9cdf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/fce486be-0bc4-4c16-b9c7-8797f91a9f5e")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6584,6 +7800,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(M2-Pad1)")
+			(pintype "passive")
 			(uuid "01b71d67-9c6e-463f-be52-44c8df571ae8")
 		)
 		(pad "2" smd roundrect
@@ -6592,6 +7809,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(R1-Pad2)")
+			(pintype "passive")
 			(uuid "fa980cd4-aaf8-4e86-bde7-ca055f34981f")
 		)
 		(embedded_fonts no)
@@ -6711,9 +7929,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a13c7f1e-db2f-4e72-867d-7da9e9575db1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GJM1555C1H330GB01D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55a777c6-3e3f-4ccd-8a95-887a3943788b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "EVB184 value; tolerance/availability TBC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2569402d-dd7f-458a-a47c-d57b4fcb7f8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x16*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/68859432-a47b-4dde-a0ae-87ef02235d47")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -6892,7 +8149,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x22*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/126ed0fb-a138-45eb-bd7e-bd35ac7a81de")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -7039,9 +8296,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba166464-7278-4546-b864-d975d9fb38b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRM155R71H102KA01D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1934cdd8-16c0-4ac1-9bbb-7071c3fdbf12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4db3c723-863f-4853-85d5-4af07e704e09")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "DNP: optional RF filter on gate"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95b24e75-3e63-4990-b826-a6e3f1fc63a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*0402_20x30x18*")
 		(path "/9fc1a283-1d36-4d24-96df-bfa313cf14fd/540f2646-212f-4d3d-921f-be3b3ae471b7")
-		(sheetname "PA Enable")
+		(sheetname "/PA Enable/")
 		(sheetfile "pa_enable.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7103,6 +8419,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "e9ee971a-3830-4cc9-9a95-17ef650f2058")
 		)
 		(pad "2" smd roundrect
@@ -7111,6 +8429,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(Q1-G)")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "ff26bd8a-59d3-4e12-86a9-edec7a61b4db")
 		)
 		(embedded_fonts no)
@@ -7217,9 +8537,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d076cb9f-e4d4-429a-b351-65669d4cb3ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a02efa7c-e60f-4ddb-8ecf-3a92acf4d4f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "0 ohm jumper"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91a857db-d5f0-40fb-aa49-883359f5fd9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_26x26x20*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/e777c6d6-463a-42b6-82eb-774d3b8f72f4")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -7366,9 +8725,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9fcf115-cea1-4801-a273-f2cd04edd4ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-071KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e351415a-c3be-45db-acd5-c7b78c76ab2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f87647b3-27d9-4012-abda-6689ba0cab75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "gate series resistor"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09fc7572-049a-4e6e-9aeb-62dc2b346f5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/9fc1a283-1d36-4d24-96df-bfa313cf14fd/b5b052ff-5f97-41c7-bd36-15ad16fff2f7")
-		(sheetname "PA Enable")
+		(sheetname "/PA Enable/")
 		(sheetfile "pa_enable.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7430,6 +8848,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/PA Enable/PA_EN")
+			(pintype "passive")
 			(uuid "360fad8c-e918-499b-94ed-73b5b3f165c8")
 		)
 		(pad "2" smd roundrect
@@ -7438,6 +8857,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(Q1-G)")
+			(pintype "passive")
 			(uuid "6f811287-4196-4ad8-919e-1c5e1571126a")
 		)
 		(embedded_fonts no)
@@ -7515,9 +8935,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ef322eb-4b6e-4cfd-beba-91b55ecb2505")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-07220RL"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15d827cd-934e-41f7-a8ef-27b148027d6b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fdd1458-62b7-4a3a-ab7c-225ba6a17da5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "pi pad shunt (E24)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3aef85d7-fb7d-4119-8e77-000c3c3c8397")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/50e257b7-b8f4-426a-9954-1a399593cd06")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7579,6 +9058,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RF Chain/RF_PA_IN")
+			(pintype "passive")
 			(uuid "265da3e5-2ad6-426b-b69d-53bf10a78e37")
 		)
 		(pad "2" smd roundrect
@@ -7587,6 +9067,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "d4177a62-6935-46b5-82c8-d4df00f0e38b")
 		)
 		(embedded_fonts no)
@@ -7711,9 +9192,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f7219a8-8441-4725-b6b6-7f5871155b31")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GJM1555C1H2R2BB01D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00a1dd9c-cb1a-4fa8-a6f0-4627121c6615")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "output match; tolerance TBC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "837c7ee6-355a-4069-90df-97abeb8bd042")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x26x22*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/929a27ea-cd5e-4b50-8888-6cd9f211d391")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -7882,9 +9402,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e6b7b0e-7a3a-4e22-91c9-51c977b1ee40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0715KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6859d8f5-1d5d-46df-ba90-34f1d72f8044")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "sets stage-1 Icq"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5896cde4-b4de-41eb-b2f0-e1d7e061bd4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_26x26x20*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/7dc955c2-d498-4916-a691-308b01327dc0")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -8049,9 +9608,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "664b68b4-4645-4058-b3a7-d6fcaae538ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d07ea8c-1acc-4f6b-acb5-fad2e9015f0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "0 ohm on inductor pads per EVB184"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c4b2a6e-8c54-474b-878e-9cdb5b26890a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/d017a9c2-8dd0-4d59-911f-656eb2e8302a")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -8188,10 +9786,28 @@
 				)
 			)
 		)
+		(property "Status" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ab50597-c966-4b6f-984a-641674b7b13a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/b8e19c02-411e-4ed3-b3d9-ad3a27c66605")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -8231,6 +9847,8 @@
 			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net "5V_PA")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "176813b9-713f-42c9-8fb9-80f732bf7204")
 		)
 		(embedded_fonts no)
@@ -8327,9 +9945,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64f0c5f9-b8ec-4eff-a081-bb24e4a55e3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-075K62L"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2648d1e-d874-4a6b-afb1-6ca02970a13a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "E96 exception: Guerrilla EVB184 value, sets stage-2 Icq (309 mA total)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0367e03a-8924-4273-93da-64695dcc3030")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_26x26x20*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/951d2bf3-c99f-465d-9289-7bf57dbb8349")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -8490,9 +10147,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96f2b4cd-681b-45fb-9639-6318bd4dc3d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7ebecf7-07a7-45a0-bd38-fe0817856d26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "edge-launch SMA; choose for final board thickness"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0e5e50d-0c7d-45c1-ab95-7129f4c15f53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*SMA Round_Pin_RevC*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/2a7cd169-a0c1-447b-b97e-94d320456f55")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -9136,9 +10832,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afef0595-9fcf-4fb8-9f22-2154a10f481a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GJM1555C1H6R2BB01D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4dbb0fd-826f-4b42-b78f-d5235b60149c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "EVB184 value; tolerance TBC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b2b1498-e472-4b05-b160-23efd655d66c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*0402_20x30x18*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/c7f03c49-29cf-4e44-9806-ce978e08693e")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -9223,6 +10958,127 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(layer "F.Cu")
+		(uuid "da6f5348-ecec-4813-addb-0208e40069c5")
+		(at 129.112633 83.994428)
+		(descr "Mounting Hole 3.2mm, M3, generated by kicad-footprint-generator mountinghole.py")
+		(tags "mountinghole M3")
+		(property "Reference" "H3"
+			(at 0 -4.15 0)
+			(layer "F.SilkS")
+			(uuid "1dee5017-ef71-463a-8294-af5db6dfe7c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 4.15 0)
+			(layer "F.Fab")
+			(uuid "7248f464-0399-4cca-bb61-17dbc0525337")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4dab096a-d2aa-4edc-9475-a047b2532e9c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bb38253-3240-40eb-b296-e056d677fb61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "mounting_hardware/mounting_hole"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "08acfa0f-ba71-4e19-8eb8-135db61ab285")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/e45fdb8d-d86b-4642-821e-05b4e3b82ca4")
+		(sheetname "/RF Chain/")
+		(sheetfile "rf_chain.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "313914be-4ca5-4459-b934-8f7a6e5798ab")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "06ee375a-d94a-444e-befe-8852695c5817")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "be681c56-2577-4075-85e0-7c2861d079a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 6.4 6.4)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "1_1")
+			(pintype "input")
+			(zone_connect 2)
+			(uuid "bb5772c8-ca72-4418-817f-78b1c9fb82fd")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "dbfe100a-967d-4a05-9df3-6dae7cace16d")
@@ -9285,9 +11141,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Lite-On"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d8ec31a-5efb-4bc8-8eff-5523d0277faa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "LTST-C170KGKT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68d10a90-1e28-42e3-8137-85c652e68764")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ffc47f4-c057-4c32-a8b5-aeffcb141437")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "5V_PA rail indicator (SSI 4.1); same LED as carrier library; DNP for FLIGHT variant"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b0622ac-4338-4531-b9a7-57930753531b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/e0a813a5-40eb-475c-aeea-22af230f3ca0")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9398,6 +11313,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "c55cde22-f1cd-4c65-8fbc-7bc2eaa97676")
 		)
 		(pad "2" smd roundrect
@@ -9406,6 +11322,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-Pad2)")
+			(pintype "passive")
 			(uuid "e4a6c277-ce94-4fea-8a12-b6dbc3f03ad7")
 		)
 		(embedded_fonts no)
@@ -9514,7 +11431,7 @@
 		)
 		(property ki_fp_filters "*0402_20x26x22*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/a71ba43c-e9af-4908-9dab-122f35606eeb")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -9653,10 +11570,28 @@
 				)
 			)
 		)
+		(property "Status" "ground test point near RF input"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "062c029b-bc70-4e4e-8cbc-64bfb403c071")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/895484e3-c194-4856-a2e9-35fa5796b91b")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -9696,6 +11631,8 @@
 			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "5aae80b1-3da0-4b95-ae73-9977c6427708")
 		)
 		(embedded_fonts no)
@@ -9754,9 +11691,67 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Littelfuse"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "423ce305-8707-4424-950d-d9cf4a59d7f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "SMBJ5.0A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71ec1adb-bf4c-4e3a-a67a-f5b6016c3a1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b83a5a57-2f12-406a-b9bf-5b81541ecca3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "ESD/surge + reverse-polarity crowbar; does NOT clamp below 5.25 V"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "555fd65e-a92c-4e6a-8a93-94e0b898e937")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/ace73cfc-726b-42f6-b50e-ae5877545a48")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9946,6 +11941,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "Net-(D1-K)")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "97385618-6cbe-4e1b-8516-bdea3c437cc9")
 		)
 		(pad "2" smd roundrect
@@ -9954,6 +11951,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "GND")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "e8e91493-8d8a-4dcb-a93c-46a3acd3c0b7")
 		)
 		(embedded_fonts no)
@@ -10031,9 +12030,68 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TBD"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84056829-e2fe-4dac-b01a-0364eb4ba844")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TBD"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8949594e-dce7-44a9-8f9a-b9ee4dddbc53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08b27d3c-7beb-4260-a855-059669b31c6e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "22 uF >=16 V X5R/X7R 1206 bulk (JLC basic)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3ec0b1e-3427-4e96-a119-646566d72071")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*0402_20x30x18*")
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/2c5e7d63-d097-4cb1-a956-9532fa683b02")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10095,6 +12153,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "26fd63bb-bc91-446c-abe6-b1b236f2103b")
 		)
 		(pad "2" smd roundrect
@@ -10103,6 +12163,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
 			(net "5V_PA")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "c9e06303-6b9e-421e-a34e-0c6cb60badb1")
 		)
 		(embedded_fonts no)
@@ -10174,7 +12236,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.guerrilla-rf.com/products/detail/sku/GRF5613"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10196,9 +12258,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Guerrilla RF"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bca5841-3c31-43ac-aa18-25f766ca414b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRF5613"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e636844a-f0a1-45c4-82a8-945f663518cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "EVB184 tune"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afd68e99-9a63-44ff-a322-ea8a8dc02731")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*QFN16_3x3mm_RevG*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/3ab28b6b-7598-4644-8526-2c331578e5c7")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -10598,9 +12699,48 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf50b64d-f387-4a1e-b5d6-847e1a70052c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "LQG15HS2N4S02D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edf88a9f-9ce8-467b-a035-f0c2225f0fe6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "EVB184 value; tolerance TBC with Guerrilla"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef4bb781-4372-4bd2-a71a-d62e5f07c3fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/9dad6d94-42e0-41bd-8872-dfbbddf3d116")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
 		(units
 			(unit
@@ -10739,10 +12879,28 @@
 				)
 			)
 		)
+		(property "Status" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6418758-a880-4f7e-bd7d-17da5a14f5dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/98e55e43-876e-4f01-957b-37bee1d6f2a9/94ee0828-8462-4ae0-993c-98ec13f092b6")
-		(sheetname "Power Entry")
+		(sheetname "/Power Entry/")
 		(sheetfile "power_entry.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -10782,6 +12940,8 @@
 			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "b7bf2ae1-d318-481d-b850-825c653a2c29")
 		)
 		(embedded_fonts no)
@@ -10814,7 +12974,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/LFCN-1400+.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10836,9 +12996,67 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Mini-Circuits"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f3e79e3-f133-492c-b071-5816c9569f44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "LFCN-1400+"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a52d1f33-8154-46ff-b796-1a2f5be4b79e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "TBD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee4b0b97-0fd5-40ef-afc0-544be77de4af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Status" "footprint from LFCN-1400+ datasheet land pattern; pins 1 IN, 3 OUT, 2/4 GND verified vs datasheet"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46844e51-fa19-4ccb-a15a-a489e72fdd3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/a6fc659e-6948-4a2d-b7fa-36cc3db0ce03/1a0f4d53-9fb9-4402-960e-e5befdfa164b")
-		(sheetname "RF Chain")
+		(sheetname "/RF Chain/")
 		(sheetfile "rf_chain.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "4" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -10879,6 +13097,8 @@
 			(size 1.04 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/RF Chain/RF_LPF_IN")
+			(pinfunction "IN_1")
+			(pintype "passive")
 			(uuid "cddff0f9-b4b8-4ee6-819e-aa7ce8d995c9")
 		)
 		(pad "2" smd rect
@@ -10886,6 +13106,8 @@
 			(size 0.61 1.245)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "a3dc8e30-19b4-4dfb-a99b-7cc7db55876c")
 		)
 		(pad "2" thru_hole circle
@@ -10895,6 +13117,8 @@
 			(layers "*.Cu")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "509aad05-acb8-4bc6-aee5-25c120a31f5e")
 		)
 		(pad "3" smd rect
@@ -10902,6 +13126,8 @@
 			(size 1.04 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/RF Chain/RF_OUT_SMA")
+			(pinfunction "OUT_3")
+			(pintype "passive")
 			(uuid "157bcfe6-04cd-41b5-a931-0d4e9a48b4a0")
 		)
 		(pad "4" thru_hole circle
@@ -10911,6 +13137,8 @@
 			(layers "*.Cu")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_4")
+			(pintype "passive")
 			(uuid "17411205-68ac-4591-893f-143adaeb800b")
 		)
 		(pad "4" smd rect
@@ -10918,6 +13146,8 @@
 			(size 0.61 1.245)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_4")
+			(pintype "passive")
 			(uuid "85b9620b-61ed-4b54-aa91-bbf98354d53b")
 		)
 		(embedded_fonts no)
@@ -12267,12 +14497,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12292,12 +14516,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12317,12 +14535,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12354,12 +14566,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -12379,12 +14585,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -12404,12 +14604,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12449,12 +14643,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12474,12 +14662,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12499,12 +14681,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12536,12 +14712,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12561,12 +14731,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -12585,12 +14749,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12621,12 +14779,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12646,12 +14798,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12670,12 +14816,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12695,12 +14835,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12720,12 +14854,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -12744,12 +14872,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12781,12 +14903,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12818,12 +14934,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -12843,12 +14953,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12868,12 +14972,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12892,12 +14990,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12928,12 +15020,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12952,12 +15038,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -12977,12 +15057,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13002,12 +15076,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13026,12 +15094,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13051,12 +15113,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13076,12 +15132,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13114,12 +15164,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13139,12 +15183,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13164,12 +15202,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -13225,12 +15257,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13249,12 +15275,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13273,12 +15293,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13298,12 +15312,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -13323,12 +15331,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13360,12 +15362,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13384,12 +15380,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13409,12 +15399,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -13434,12 +15418,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13467,12 +15445,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13492,12 +15464,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -13517,12 +15483,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13550,12 +15510,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13575,12 +15529,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -13612,12 +15560,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13636,12 +15578,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13661,12 +15597,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13685,12 +15615,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13710,12 +15634,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -13735,12 +15653,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13760,12 +15672,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13784,12 +15690,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13824,12 +15724,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13849,12 +15743,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13873,12 +15761,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13898,12 +15780,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -13922,12 +15798,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13947,12 +15817,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13972,12 +15836,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -13997,12 +15855,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14034,12 +15886,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14059,12 +15905,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14084,12 +15924,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14109,12 +15943,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14134,12 +15962,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14172,12 +15994,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14196,12 +16012,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14220,12 +16030,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14245,12 +16049,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14269,12 +16067,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14294,12 +16086,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14319,12 +16105,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14344,12 +16124,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14369,12 +16143,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14394,12 +16162,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14419,12 +16181,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14444,12 +16200,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14469,12 +16219,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14494,12 +16238,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14519,12 +16257,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14544,12 +16276,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14569,12 +16295,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14594,12 +16314,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14631,12 +16345,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14656,12 +16364,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14681,12 +16383,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14705,12 +16401,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14730,12 +16420,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14755,12 +16439,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14792,12 +16470,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14816,12 +16488,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14841,12 +16507,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14866,12 +16526,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14911,12 +16565,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14936,12 +16584,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -14961,12 +16603,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -14986,12 +16622,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15019,12 +16649,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15044,12 +16668,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15069,12 +16687,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15106,12 +16718,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15166,12 +16772,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15191,12 +16791,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15216,12 +16810,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15241,12 +16829,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15266,12 +16848,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15291,12 +16867,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15315,12 +16885,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15348,12 +16912,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15381,12 +16939,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15413,12 +16965,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15438,12 +16984,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15475,12 +17015,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15500,12 +17034,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15524,12 +17052,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15549,12 +17071,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15582,12 +17098,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15607,12 +17117,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15632,12 +17136,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15657,12 +17155,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15682,12 +17174,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15718,12 +17204,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15743,12 +17223,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15767,12 +17241,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15791,12 +17259,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15816,12 +17278,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15840,12 +17296,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15864,12 +17314,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -15897,12 +17341,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15930,12 +17368,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15955,12 +17387,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -15988,12 +17414,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16012,12 +17432,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16037,12 +17451,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16070,12 +17478,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16095,12 +17497,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16120,12 +17516,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16169,12 +17559,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16194,12 +17578,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16239,12 +17617,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16276,12 +17648,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16301,12 +17667,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16333,12 +17693,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16370,12 +17724,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16395,12 +17743,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16420,12 +17762,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16460,12 +17796,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16485,12 +17815,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16509,12 +17833,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16533,12 +17851,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16558,12 +17870,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16583,12 +17889,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16608,12 +17908,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16632,12 +17926,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16665,12 +17953,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16714,12 +17996,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16739,12 +18015,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16764,12 +18034,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16801,12 +18065,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16826,12 +18084,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16851,12 +18103,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16875,12 +18121,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16900,12 +18140,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -16925,12 +18159,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16950,12 +18178,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16975,12 +18197,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -16999,12 +18215,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17024,12 +18234,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17049,12 +18253,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17082,12 +18280,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17106,12 +18298,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17131,12 +18317,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17156,12 +18336,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -17180,12 +18354,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17205,12 +18373,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17238,12 +18400,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -17283,12 +18439,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -17332,12 +18482,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17369,12 +18513,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17394,12 +18532,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17435,12 +18567,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17459,12 +18585,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17483,12 +18603,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17508,12 +18622,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -17533,12 +18641,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.4572)
-			)
-			(layer "In2.Cu"
-				(size 0.4572)
-			)
 			(layer "B.Cu"
 				(size 0.4572)
 			)
@@ -17558,12 +18660,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17583,12 +18679,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17615,12 +18705,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -17639,12 +18723,6 @@
 		)
 		(padstack
 			(mode custom)
-			(layer "In1.Cu"
-				(size 0.508)
-			)
-			(layer "In2.Cu"
-				(size 0.508)
-			)
 			(layer "B.Cu"
 				(size 0.508)
 			)
@@ -18821,131 +19899,6 @@
 		)
 		(filled_polygon
 			(layer "B.Cu")
-			(pts
-				(xy 169.380043 80.525765) (xy 169.625632 80.541861) (xy 169.64169 80.543976) (xy 169.879073 80.591194)
-				(xy 169.894728 80.595389) (xy 170.123917 80.673188) (xy 170.138888 80.679389) (xy 170.341625 80.779367)
-				(xy 170.35596 80.786437) (xy 170.370006 80.794547) (xy 170.571241 80.929007) (xy 170.584107 80.938878)
-				(xy 170.696037 81.037038) (xy 170.766072 81.098458) (xy 170.777541 81.109927) (xy 170.937118 81.291889)
-				(xy 170.946992 81.304758) (xy 171.081452 81.505993) (xy 171.089562 81.520039) (xy 171.196607 81.737103)
-				(xy 171.202814 81.752089) (xy 171.280608 81.981265) (xy 171.284806 81.996932) (xy 171.332021 82.234298)
-				(xy 171.334139 82.250379) (xy 171.350235 82.495956) (xy 171.3505 82.504066) (xy 171.3505 118.995933)
-				(xy 171.350235 119.004043) (xy 171.334139 119.24962) (xy 171.332021 119.265701) (xy 171.284806 119.503067)
-				(xy 171.280608 119.518734) (xy 171.202814 119.74791) (xy 171.196607 119.762896) (xy 171.089562 119.97996)
-				(xy 171.081452 119.994006) (xy 170.946992 120.195241) (xy 170.937118 120.20811) (xy 170.777541 120.390072)
-				(xy 170.766072 120.401541) (xy 170.58411 120.561118) (xy 170.571241 120.570992) (xy 170.370006 120.705452)
-				(xy 170.35596 120.713562) (xy 170.138896 120.820607) (xy 170.12391 120.826814) (xy 169.894734 120.904608)
-				(xy 169.879067 120.908806) (xy 169.641701 120.956021) (xy 169.62562 120.958139) (xy 169.380043 120.974235)
-				(xy 169.371933 120.9745) (xy 127.630067 120.9745) (xy 127.621957 120.974235) (xy 127.376379 120.958139)
-				(xy 127.360298 120.956021) (xy 127.122932 120.908806) (xy 127.107265 120.904608) (xy 126.878089 120.826814)
-				(xy 126.863103 120.820607) (xy 126.862914 120.820514) (xy 126.843807 120.811091) (xy 126.646039 120.713562)
-				(xy 126.631993 120.705452) (xy 126.430758 120.570992) (xy 126.417889 120.561118) (xy 126.37798 120.526119)
-				(xy 126.235927 120.401541) (xy 126.224458 120.390072) (xy 126.064881 120.20811) (xy 126.055007 120.195241)
-				(xy 125.920547 119.994006) (xy 125.912437 119.97996) (xy 125.871909 119.897778) (xy 125.805389 119.762888)
-				(xy 125.799188 119.747917) (xy 125.721389 119.518728) (xy 125.717193 119.503067) (xy 125.695897 119.396003)
-				(xy 125.669976 119.26569) (xy 125.667861 119.249632) (xy 125.651765 119.004043) (xy 125.6515 118.995933)
-				(xy 125.6515 82.504066) (xy 125.651765 82.495956) (xy 125.660201 82.367242) (xy 125.667861 82.250365)
-				(xy 125.669976 82.234311) (xy 125.717195 81.996922) (xy 125.721388 81.981275) (xy 125.799189 81.752076)
-				(xy 125.805386 81.737116) (xy 125.91244 81.520033) (xy 125.920547 81.505993) (xy 126.055007 81.304758)
-				(xy 126.064872 81.291899) (xy 126.224463 81.109921) (xy 126.235921 81.098463) (xy 126.417899 80.938872)
-				(xy 126.430753 80.92901) (xy 126.631993 80.794547) (xy 126.646033 80.78644) (xy 126.863116 80.679386)
-				(xy 126.878076 80.673189) (xy 127.107275 80.595388) (xy 127.122922 80.591195) (xy 127.360311 80.543976)
-				(xy 127.376367 80.541861) (xy 127.601757 80.527088) (xy 127.621958 80.525765) (xy 127.630067 80.5255)
-				(xy 127.634285 80.5255) (xy 169.367715 80.5255) (xy 169.371933 80.5255)
-			)
-		)
-	)
-	(zone
-		(net "GND")
-		(layer "In1.Cu")
-		(uuid "9d87bbb5-8965-45e2-a72c-5e0e6e173d11")
-		(hatch edge 0.5)
-		(priority 1)
-		(connect_pads yes
-			(clearance 0.2032)
-		)
-		(min_thickness 0.25)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
-		)
-		(polygon
-			(pts
-				(xy 125.626 82.5) (xy 125.664429 82.109819) (xy 125.778241 81.734633) (xy 125.963061 81.38886) (xy 126.211786 81.085786)
-				(xy 126.51486 80.837061) (xy 126.860633 80.652241) (xy 127.235819 80.538429) (xy 127.626 80.5) (xy 169.376 80.5)
-				(xy 169.766181 80.538429) (xy 170.141367 80.652241) (xy 170.48714 80.837061) (xy 170.790214 81.085786)
-				(xy 171.038939 81.38886) (xy 171.223759 81.734633) (xy 171.337571 82.109819) (xy 171.376 82.5) (xy 171.376 119)
-				(xy 171.337571 119.390181) (xy 171.223759 119.765367) (xy 171.038939 120.11114) (xy 170.790214 120.414214)
-				(xy 170.48714 120.662939) (xy 170.141367 120.847759) (xy 169.766181 120.961571) (xy 169.376 121)
-				(xy 127.626 121) (xy 127.235819 120.961571) (xy 126.860633 120.847759) (xy 126.51486 120.662939)
-				(xy 126.211786 120.414214) (xy 125.963061 120.11114) (xy 125.778241 119.765367) (xy 125.664429 119.390181)
-				(xy 125.626 119)
-			)
-		)
-		(filled_polygon
-			(layer "In1.Cu")
-			(pts
-				(xy 169.380043 80.525765) (xy 169.625632 80.541861) (xy 169.64169 80.543976) (xy 169.879073 80.591194)
-				(xy 169.894728 80.595389) (xy 170.123917 80.673188) (xy 170.138888 80.679389) (xy 170.341625 80.779367)
-				(xy 170.35596 80.786437) (xy 170.370006 80.794547) (xy 170.571241 80.929007) (xy 170.584107 80.938878)
-				(xy 170.696037 81.037038) (xy 170.766072 81.098458) (xy 170.777541 81.109927) (xy 170.937118 81.291889)
-				(xy 170.946992 81.304758) (xy 171.081452 81.505993) (xy 171.089562 81.520039) (xy 171.196607 81.737103)
-				(xy 171.202814 81.752089) (xy 171.280608 81.981265) (xy 171.284806 81.996932) (xy 171.332021 82.234298)
-				(xy 171.334139 82.250379) (xy 171.350235 82.495956) (xy 171.3505 82.504066) (xy 171.3505 118.995933)
-				(xy 171.350235 119.004043) (xy 171.334139 119.24962) (xy 171.332021 119.265701) (xy 171.284806 119.503067)
-				(xy 171.280608 119.518734) (xy 171.202814 119.74791) (xy 171.196607 119.762896) (xy 171.089562 119.97996)
-				(xy 171.081452 119.994006) (xy 170.946992 120.195241) (xy 170.937118 120.20811) (xy 170.777541 120.390072)
-				(xy 170.766072 120.401541) (xy 170.58411 120.561118) (xy 170.571241 120.570992) (xy 170.370006 120.705452)
-				(xy 170.35596 120.713562) (xy 170.138896 120.820607) (xy 170.12391 120.826814) (xy 169.894734 120.904608)
-				(xy 169.879067 120.908806) (xy 169.641701 120.956021) (xy 169.62562 120.958139) (xy 169.380043 120.974235)
-				(xy 169.371933 120.9745) (xy 127.630067 120.9745) (xy 127.621957 120.974235) (xy 127.376379 120.958139)
-				(xy 127.360298 120.956021) (xy 127.122932 120.908806) (xy 127.107265 120.904608) (xy 126.878089 120.826814)
-				(xy 126.863103 120.820607) (xy 126.862914 120.820514) (xy 126.843807 120.811091) (xy 126.646039 120.713562)
-				(xy 126.631993 120.705452) (xy 126.430758 120.570992) (xy 126.417889 120.561118) (xy 126.37798 120.526119)
-				(xy 126.235927 120.401541) (xy 126.224458 120.390072) (xy 126.064881 120.20811) (xy 126.055007 120.195241)
-				(xy 125.920547 119.994006) (xy 125.912437 119.97996) (xy 125.871909 119.897778) (xy 125.805389 119.762888)
-				(xy 125.799188 119.747917) (xy 125.721389 119.518728) (xy 125.717193 119.503067) (xy 125.695897 119.396003)
-				(xy 125.669976 119.26569) (xy 125.667861 119.249632) (xy 125.651765 119.004043) (xy 125.6515 118.995933)
-				(xy 125.6515 82.504066) (xy 125.651765 82.495956) (xy 125.660201 82.367242) (xy 125.667861 82.250365)
-				(xy 125.669976 82.234311) (xy 125.717195 81.996922) (xy 125.721388 81.981275) (xy 125.799189 81.752076)
-				(xy 125.805386 81.737116) (xy 125.91244 81.520033) (xy 125.920547 81.505993) (xy 126.055007 81.304758)
-				(xy 126.064872 81.291899) (xy 126.224463 81.109921) (xy 126.235921 81.098463) (xy 126.417899 80.938872)
-				(xy 126.430753 80.92901) (xy 126.631993 80.794547) (xy 126.646033 80.78644) (xy 126.863116 80.679386)
-				(xy 126.878076 80.673189) (xy 127.107275 80.595388) (xy 127.122922 80.591195) (xy 127.360311 80.543976)
-				(xy 127.376367 80.541861) (xy 127.601757 80.527088) (xy 127.621958 80.525765) (xy 127.630067 80.5255)
-				(xy 127.634285 80.5255) (xy 169.367715 80.5255) (xy 169.371933 80.5255)
-			)
-		)
-	)
-	(zone
-		(net "GND")
-		(layer "In2.Cu")
-		(uuid "c370917c-66d0-429f-afcc-8408de3f0113")
-		(hatch edge 0.5)
-		(connect_pads yes
-			(clearance 0.2032)
-		)
-		(min_thickness 0.25)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
-		)
-		(polygon
-			(pts
-				(xy 125.626 82.5) (xy 125.664429 82.109819) (xy 125.778241 81.734633) (xy 125.963061 81.38886) (xy 126.211786 81.085786)
-				(xy 126.51486 80.837061) (xy 126.860633 80.652241) (xy 127.235819 80.538429) (xy 127.626 80.5) (xy 169.376 80.5)
-				(xy 169.766181 80.538429) (xy 170.141367 80.652241) (xy 170.48714 80.837061) (xy 170.790214 81.085786)
-				(xy 171.038939 81.38886) (xy 171.223759 81.734633) (xy 171.337571 82.109819) (xy 171.376 82.5) (xy 171.376 119)
-				(xy 171.337571 119.390181) (xy 171.223759 119.765367) (xy 171.038939 120.11114) (xy 170.790214 120.414214)
-				(xy 170.48714 120.662939) (xy 170.141367 120.847759) (xy 169.766181 120.961571) (xy 169.376 121)
-				(xy 127.626 121) (xy 127.235819 120.961571) (xy 126.860633 120.847759) (xy 126.51486 120.662939)
-				(xy 126.211786 120.414214) (xy 125.963061 120.11114) (xy 125.778241 119.765367) (xy 125.664429 119.390181)
-				(xy 125.626 119)
-			)
-		)
-		(filled_polygon
-			(layer "In2.Cu")
 			(pts
 				(xy 169.380043 80.525765) (xy 169.625632 80.541861) (xy 169.64169 80.543976) (xy 169.879073 80.591194)
 				(xy 169.894728 80.595389) (xy 170.123917 80.673188) (xy 170.138888 80.679389) (xy 170.341625 80.779367)
